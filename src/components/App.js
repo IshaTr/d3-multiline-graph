@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 import Graph from './Graph';
-import { graphData } from '../graphHelper';
+import { graphData, lineGraphData } from '../graphHelper';
 import LineGraph from './LineGraph';
 
+const areaGraph = graphData.slice();
 class App extends Component {
   render() {
     return (
@@ -16,8 +17,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Graph data={graphData} />
-        {/* <LineGraph data={graphData} /> */}
+        <Graph data={areaGraph} />
+        <LineGraph data={lineGraphData} />
       </div>
     );
   }

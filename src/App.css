@@ -39,3 +39,16 @@ div.tooltip {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.axis>path,
+.axis>line {
+    fill: none;
+    stroke: transparent;
+    shape-rendering: crispEdges;
+}
+
+.axis>text {
+    display: none;
+    /* font-family: sans-serif; */
+    font-size: 0px;
+}
